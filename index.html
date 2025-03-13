@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Training Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weekly Training Tracker</h1>
+    <form id="entry-form">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="Work">Work</option>
+            <option value="Study">Study</option>
+            <option value="Exercise">Exercise</option>
+        </select>
+        
+        <label for="hours">Hours:</label>
+        <input type="number" id="hours" min="0" step="0.5" required>
+        
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+        
+        <button type="submit">Add Entry</button>
+    </form>
+    
+    <h2>Entries</h2>
+    <ul id="entry-list"></ul>
+    
+    <h2 id="total-hours">Total Hours: 0</h2>
+    <h3>Category Summary</h3>
+    <div id="category-summary"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
