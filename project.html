@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weeklycounter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Weekly counter</h1>
+    
+    <form id="timeForm">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="Job">job</option>
+            <option value="Study">study</option>
+            <option value="Sport">sport</option>
+            <option value="Other">other</option>
+        </select>
+
+        <label for="hours">Hours:</label>
+        <input type="number" id="hours" min="0" required>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Notes</h2>
+    <ul id="entryList"></ul>
+
+    <h2>Summary</h2>
+    <p id="totalHours">Total hours: 0</p>
+    <p id="categorySummary"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
